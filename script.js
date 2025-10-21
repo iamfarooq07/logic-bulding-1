@@ -201,13 +201,13 @@
 //     else if (num >= 33 && num <= 60) {
 //         return "C Gread";
 //     }
-//     else if(num <= 33) { 
+//     else if(num <= 33) {
 //         return "Failed";
 //     }
 // }
 // console.log(studentResult(32));
 
-// --------/ 
+// --------/
 
 // var products = [
 //     {
@@ -327,7 +327,7 @@
 // }
 // console.log(`The total quantity is : ${totalQuantity()}`);
 
-// --------/ 
+// --------/
 
 // Q  Check if a Number is Positive, Negative, or Zero
 // function checkNum(num) {
@@ -341,7 +341,7 @@
 // }
 // console.log(checkNum(0));
 
-// --------/ 
+// --------/
 
 // Q Check  even and odd
 
@@ -354,7 +354,7 @@
 // }
 // console.log(evenOdd(555555));
 
-// --------/ 
+// --------/
 
 // Q Write a JavaScript program that asks for a user's age and determines if they are eligible to vote (age should be 18 or above).
 
@@ -367,7 +367,7 @@
 // }
 // console.log(voteAge(16));
 
-// --------/ 
+// --------/
 
 // Q Find the Largest of Two Numbers
 
@@ -380,7 +380,7 @@
 // }
 // console.log(addTwoNum(20, 120));
 
-// --------/ 
+// --------/
 
 // Q  Check If a Person is Eligible for a Discount
 
@@ -393,31 +393,36 @@
 // }
 // console.log(disEligible(60.1));
 
-// --------/ 
+// --------/
 
 // Q Grade System
 
-function gradeSystem(input) {
-    if (input > 100) {
-        return "This is not Eligible"
-    }
-    else if(input >= 90 && input <= 100) {
-        return "A Grade";
-    }
-    else if (input >= 80 && input <= 89) {
-        return "B Grade";
-    }
-    else if (input >= 70 && input <= 79) {
-        return "C Grade";
-    }
-    else if (input >= 60 && input <= 69) {
-        return "D Grade";
-    }
-    else if (input <= 60 && input >= 33) {
-        return "Very Bad";
-    }
-    else if (input < 33) {
-        return "Failed"
-    }
-}
-console.log(gradeSystem(30))
+// function gradeSystem(input) {
+//     if (input > 100) {
+//         return "This is not Eligible"
+//     }
+//     else if(input >= 90 && input <= 100) {
+//         return "A Grade";
+//     }
+//     else if (input >= 80 && input <= 89) {
+//         return "B Grade";
+//     }
+//     else if (input >= 70 && input <= 79) {
+//         return "C Grade";
+//     }
+//     else if (input >= 60 && input <= 69) {
+//         return "D Grade";
+//     }
+//     else if (input <= 60 && input >= 33) {
+//         return "Very Bad";
+//     }
+//     else if (input < 33) {
+//         return "Failed"
+//     }
+// }
+// console.log(gradeSystem(30))
+
+// let a = 20;
+// let b = 30;
+// let c = a + b;
+// console.log(`The Sum is ${c}`);
