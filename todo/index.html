@@ -1,0 +1,23 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Todo List</title>
+</head>
+
+<body class="w-screen h-screen bg-black flex justify-center items-center">
+    <div class="w-[50%] h-auto bg-gray-100 text-black text-center p-5 rounded-2xl">
+        <h1 class="text-5xl font-bold">Todo List</h1>
+        <form id="form" class="mt-5">
+            <input type="text" placeholder="Search" id="input" class="w-full bg-gray-300 p-3 rounded-2xl">
+            <button id="btn" class="mt-2 w-[50%] p-4 rounded-2xl text-xl font-bold bg-black text-white">Add
+                Todo</button>
+        </form>
+        <ul id="addTodo" class="m-5"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
