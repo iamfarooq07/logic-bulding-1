@@ -532,15 +532,15 @@
 
 // shallow copy and deep copy
 
-// let orignalObj = {
-//     name: "farooq",
-//     age: 23,
-//     address: { city: "Karachi" },
-// }
-// // console.log(orignalObj);
+let orignalObj = {
+    name: "farooq",
+    age: 23,
+    address: { city: "Karachi" },
+}
+// console.log(orignalObj);
 
-// let shallowCopy = { ...orignalObj }
-// let deepcopy = JSON.parse(JSON.stringify(orignalObj));
+let shallowCopy = { ...orignalObj }
+let deepcopy = JSON.parse(JSON.stringify(orignalObj));
 
 // console.log(shallowCopy);
 
@@ -666,58 +666,17 @@
 
 // console.log(result);
 
-// Max Number in Array
+let arr = [3, 7, 2, 9, 5];
 
-// let arr = [31, 17, 12, 9, 15];
+let maxArr = arr[0];
 
-// let maxArr = arr[0];
-
-// arr.forEach((val) => {
-
-//     if (val > maxArr) {
-//         maxArr = val
-//     }
-// })
-// console.log(maxArr);
-
-
-// Max Number in Array
-
-// let arr = [8, 4, 6, 2, 10];
-// let min = arr[0];
-
-// arr.forEach((val) => {
-//     if (val < min) {
-//         min = val
-//     }
-// })
-// console.log("Min Number in Array", min);
-
-// Revers in Array
-
-// let arr = [1, 2, 3, 4];
-// let reversedArr = [];
-
-// for (let i = arr.length - 1; i >= 0; i--) {
-//     reversedArr.push(arr[i])
-// }
-
-// console.log(reversedArr);
-
-let arr = [2, 3, 2, 5, 2, 7, 3, 3, 3, 5, 5,  6, 7, 7 , 7, 1 , 32, 2];
-let count = 0;
-
-arr.forEach(val => {
-    if (val === 2) {
-        count++
+arr.forEach((val) => {
+    // console.log(val);
+    if (val > maxArr) {
+        maxArr = val
     }
+    console.log(maxArr);
 })
-console.log(count);
-
-
-
-
-
 
 
 
