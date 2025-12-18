@@ -476,7 +476,7 @@
 //     console.log('abc');
 //     console.log('def');
 // } catch (error) {
-//     console.log(error.message); 
+//     console.log(error.message);
 // }
 
 // console.log(100 / 10); // -> Infinity
@@ -704,15 +704,98 @@
 
 // console.log(reversedArr);
 
-let arr = [2, 3, 2, 5, 2, 7, 3, 3, 3, 5, 5,  6, 7, 7 , 7, 1 , 32, 2];
-let count = 0;
+// let arr = [2, 3, 2, 5, 2, 7, 3, 3, 3, 5, 5,  6, 7, 7 , 7, 1 , 32, 2];
+// let count = 0;
 
-arr.forEach(val => {
-    if (val === 2) {
-        count++
-    }
-})
-console.log(count);
+// arr.forEach(val => {
+//     if (val === 2) {
+//         count++
+//     }
+// })
+// console.log(count);
+
+
+// Chat gpt Question debagging
+
+// Task: Array mein se sirf even numbers ka sum nikalna hai
+
+// function sumEvenNumbers(arr) {
+//     let sum = 0;
+
+// for (let i = 0; i < arr.length; i++) {
+//     // console.log(i);
+
+//     if (arr[i] % 2 === 0) {
+//         sum += arr[i];
+//         //   console.log(sum);
+
+//     }
+// }
+
+//     return arr.reduce((acc, num) => {
+//         if (num % 2 === 0) acc += num
+//         return acc
+//     }, 0)
+
+// }
+
+// console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6]));
+// Expected Output: 12
+
+// =========================
+
+// function findMax(arr) {
+//     let max = arr[0];
+
+//     for (let i = 1; i < arr.length; i++) {
+//         if (arr[i] > max) {
+//             max = arr[i];
+//         }
+//     }
+
+//     return max;
+// }
+
+// console.log(findMax([-10, -5, -2, -20]));
+// Expected Output: -2
+
+
+// =====================
+
+// function removeDuplicates(arr) {
+//     let result = [];
+
+//     for (let i = 0; i < arr.length; i++) {
+//         console.log(arr[i]);
+
+
+//         if (!result.includes(arr[i])) {
+//             result.push(arr[i]);
+
+//         }
+//     }
+//     return result;
+
+// }
+
+// console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5]));
+// Expected Output: [1, 2, 3, 4, 5]
+
+// ==========Stop================
+
+const nestedArray = [[1, 2], [3, 4], [5, 6]];
+
+// const flatArray = nestedArray.flat();
+const flatArray = [].concat(...nestedArray);
+console.log(flatArray);
+
+// const arr = nestedArray.reduce((acc, crtValue) => {
+//     return acc.concat(crtValue)
+// }, [])
+
+// console.log(arr);
+
+
 
 
 
